@@ -12,10 +12,10 @@ Se plantea resolver en python una serie de ejercicios utilizando funciones, clas
 - ⚙️ Python
 ```bash
 # Clona el repositorio
-git clone https://github.com/usuario/repositorio.git
+git clone https://github.com/CesarNavarro24k/Proyecto_1.git
 
 # Entra en la carpeta del proyecto
-cd nombre-del-proyecto
+cd proyecto_1
 
 # Instala las dependencias (si aplica)
 npm install  # o pip install -r requirements.txt
