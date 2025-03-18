@@ -5,6 +5,7 @@ class Main():
         self.radio = 0
         self.envio = areas_fig()
     def Ingresar_numeros(self):
+        
         self.radio = int(input("Ingrese el radio del circulo para calcular su area: "))
         self.num1 = int(input("Ingrese el primer numero: "))
         self.num2 = int(input("Ingrese el segundo numero: "))
@@ -21,10 +22,11 @@ class Main():
         self.largo = int(input("Ingresa el largo del rectangulo:"))
         self.ancho = int(input("Ingresa el ancho del rectangulo:"))
         self.usuario = input("Ingresa tu nombre de usuario:")
-        self.pr = input("Te gustaria hacer un retiro a tu cuenta?")
-        self.trans_ahorro = int(input("Cuanto dinero te gustaria agregar a tu cuenta?"))
-        self.trans_retiro = int(input("Cuanto dinero te gustaria sacar de tu cuenta?"))
+        self.trans_retiro1 = int(input("Cuanto dinero te gustaria retirar de tu cuenta?"))
+        self.trans_retiro2 = int(input("Cuanto dinero te gustaria sacar de tu cuenta nuevamente?"))
+        self.deposito = int(input("Cuanto dinero vas a colocar en la cuenta?"))
     def envia_datos(self):
+        self.envio.lista_estudiantes()
         self.envio.area_cir(self.radio)
         self.envio.suma(self.num1,self.num2)
         self.envio.saludo(self.name,self.lastname,self.age)
@@ -32,7 +34,10 @@ class Main():
         self.envio.peri_triangulo(self.lado1,self.lado2,self.lado3)
         self.envio.area_cuadrado(self.basec,self.baset)
         self.envio.peri_cuadrado(self.largo,self.ancho)
-        self.envio.cuenta_bancaria(self.usuario,self.trans_ahorro,self.trans_retiro,self.pr)
+        self.envio.cuenta_bancaria(self.usuario,self.trans_retiro1,self.trans_retiro2,self.deposito)
+        
+
+
 if __name__ == '__main__':
     Inicio_p = Main()
     Inicio_p.Ingresar_numeros()
